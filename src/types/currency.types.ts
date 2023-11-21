@@ -12,3 +12,8 @@ export interface CurrencyType {
   vwap24Hr: string;
   explorer: string;
 }
+
+export interface HistoryType {
+  priceUsd: string;
+  time: number;
+}

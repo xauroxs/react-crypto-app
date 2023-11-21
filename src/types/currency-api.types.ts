@@ -1,4 +1,4 @@
-import { CurrencyType } from "./currency.types";
+import { CurrencyType, HistoryType } from "./currency.types";
 
 export interface CurrencyRequestType {
   data: CurrencyType;
@@ -11,9 +11,6 @@ export interface CurrenciesRequestType {
 }
 
 export interface CurrencyHistoryRequestType {
-  data: {
-    priceUsd: string;
-    time: number;
-  }[];
+  data: HistoryType[];
   timestamp: number;
 }
